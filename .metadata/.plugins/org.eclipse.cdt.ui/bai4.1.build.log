@@ -1,0 +1,7 @@
+00:11:54 **** Rebuild of configuration Debug for project bai4.1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o bai4.1.o "..\\bai4.1.c" 
+gcc -o bai4.1.exe bai4.1.o 
+
+00:11:54 Build Finished. 0 errors, 0 warnings. (took 281ms)
+

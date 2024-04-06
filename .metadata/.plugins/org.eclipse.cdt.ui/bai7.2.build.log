@@ -1,0 +1,7 @@
+00:37:21 **** Incremental Build of configuration Debug for project bai7.2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o bai7.2.o "..\\bai7.2.c" 
+gcc -o bai7.2.exe bai7.2.o 
+
+00:37:21 Build Finished. 0 errors, 0 warnings. (took 269ms)
+

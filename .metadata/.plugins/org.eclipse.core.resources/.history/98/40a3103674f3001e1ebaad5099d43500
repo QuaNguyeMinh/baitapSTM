@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int primes[100]; // Mảng để lưu trữ các số nguyên tố, tối đa là 25 số
+    int count = 0;  // Biến đếm số lượng số nguyên tố đã tìm được
+
+    // Tìm tất cả các số nguyên tố trong khoảng từ 1 đến 100 và lưu vào mảng
+    int i, j, isPrime;
+    for (i = 2; i <= 100; i++) {
+        isPrime = 1; // Giả sử số i là số nguyên tố
+
+        // Kiểm tra i có phải là số nguyên tố hay không
+        for (j = 2; j * j <= i; j++) {
+            if (i % j == 0) {
+                isPrime = 0; // Không phải số nguyên tố
+                break;
+            }
+        }
+
+        // Nếu i là số nguyên tố, lưu vào mảng
+        if (isPrime) {
+            primes[count] = i;
+            count++;
+        }
+    }
+
+    // Hiển thị các số nguyên tố đã tìm được trong mảng
+    printf("Cac so nguyen to trong khoang tu 1 den 100:\n");
+    for (i = 0; i < count; i++) {
+        printf("%d ", primes[i]);
+    }
+
+    return 0;
+}

@@ -1,0 +1,7 @@
+00:20:07 **** Rebuild of configuration Debug for project bai5.2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o bai5.2.o "..\\bai5.2.c" 
+gcc -o bai5.2.exe bai5.2.o 
+
+00:20:07 Build Finished. 0 errors, 0 warnings. (took 273ms)
+
